@@ -1,0 +1,16 @@
+
+$ python domino_shuffling_animation.py
+$ python e8.py
+$ python kaleidoscope.py
+$ python lorenz.py
+$ python mandelbrot.py
+$ python modulargroup.py
+$ python newton.py
+
+<如何用Python画各种著名数学图案 | 附图+代码> 大数据文摘
+https://cloud.tencent.com/developer/article/1131900
+https://github.com/neozhaoliang/pywonderland/blob/master/README.md
+
+------ numba can not be installed on ubuntu 14.04 ------ 2018-09-07 -----
+Due to the llvmlite installation issue
+
