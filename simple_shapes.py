@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
     Simple shapes in cartesian coordinates
 """
@@ -102,7 +103,7 @@ def general_shapes(width=600,length=800,background=[255,255,255],frontground=[0,
     #x axis
     xy[width//2,:,:]=frontground
     #y axis
-    xy[:,length/2,:]=frontground
+    xy[:,length//2,:]=frontground
 
     axis_unit=float(min(width, length))
     for x in range(width):
