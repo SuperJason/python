@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+
+import hashlib
+
+f = open('data', 'rb')
+b = f.read(4096)
+print('b is read from file \'data\'')
+print('b = ' + str(b))
+print('b\'s len: ' + str(len(b)))
+#print(len(b))
+#print(b[0])
+#print(b[10])
+#print(type(b))
+hash = hashlib.sha256(b)
+print('b\'s sha256sum:')
+print(hash.hexdigest())
+c = bytes([97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 10])
+print('c = ' + str(c))
+print('c\'s len: ' + str(len(c)))
+hash = hashlib.sha256(c)
+print('c\'s sha256sum:')
+print(hash.hexdigest())
+print('b == c is ' + str(b == c))
+
+d = 'abcdefghij'.encode('utf-8')
+print('d = ' + str(d))
+print('d\'s len: ' + str(len(d)))
+hash = hashlib.sha256(d)
+print('d\'s sha256sum:')
+print(hash.hexdigest())
+
+e = 'hello world'.encode('utf-8')
+print('e = ' + str(e))
+print('e\'s len: ' + str(len(e)))
+hash = hashlib.sha256(e)
+print('e\'s sha256sum:')
+print(hash.hexdigest())
